@@ -1,0 +1,443 @@
+---
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.11.5
+---
+
+$\newcommand{L}[1]{\| #1 \|}\newcommand{VL}[1]{\L{ \vec{#1} }}\newcommand{R}[1]{\operatorname{Re}\,(#1)}\newcommand{I}[1]{\operatorname{Im}\, (#1)}$
+
+## Basic numpy exercises
+
+<!-- # Here I set up some useful things for the doctests below
+import numpy as np
+np.set_printoptions(precision=6)  # Only show 6 decimals when printing
+import matplotlib
+matplotlib.use('agg')  # Stop plots displaying on screen for tests -->
+### Simple arrays
+
+<!-- 5 minutes. -->
+Create an array with variable name `a` and the following contents (shape (3,
+4)):
+
+```
+2  7 12  0
+3  9  3  4
+4  0  1  3
+```
+
+```{python}
+#- create array "a" with values
+#-     2  7 12  0
+#-     3  9  3  4
+#-     4  0  1  3
+import numpy as np
+a = np.array([[2, 7, 12, 0], [3, 9, 3, 4], [4, 0, 1,  3]])
+a
+```
+
+What is the array `shape`?
+
+```{python}
+#- Array shape?
+a.shape
+```
+
+What is the array `ndim`?
+
+```{python}
+#- Array ndim?
+a.ndim
+```
+
+How about the `len` of the array?
+
+```{python}
+#- Array length
+len(a)
+```
+
+Can you get the `ndim` and `len` from the shape?
+
+```{python}
+#- Get ndim and length from the shape
+len(a.shape) == a.ndim
+a.shape[0] == len(a)
+```
+
+# Creating arrays using functions
+
+<!-- 10 minutes. -->
+1. Create a 1D array from 2 through 5 inclusive.
+
+```{python}
+#- 1D array 2 through 5
+np.arange(2, 6)
+```
+
+1. Make an array with 10 equally spaced elements between 2 and 5 inclusive.
+
+```{python}
+#- 10 equally spaced elementd between 2 and 5
+np.linspace(2, 5, 10)
+```
+
+1. Make an all-ones array shape (4, 4).
+
+```{python}
+#- Shape 4,4 array of 1
+np.ones((4, 4))
+```
+
+1. Make an identity array shape (6, 6).
+
+```{python}
+#- Identity array shape 6, 6
+np.eye(6)
+```
+
+1. Make this array with a single Python / numpy command:
+
+   ```
+   1  0  0
+   0  2  0
+   0  0  3
+   ```
+
+```{python}
+#- Array with top left value == 1 etc
+np.diag([1, 2, 3])
+```
+
+Look at the docstring for `np.random.randn`.  Make a shape (3, 5) array with
+random numbers from a standard normal distribution (a normal distribution with
+mean 0 and variance 1).
+
+```{python}
+#- Array of random numbers shape 3, 5
+rand_arr = np.random.rand(3, 5)
+rand_arr.shape
+```
+
+# Simple visualizations
+
+<!-- 7 minutes. -->
+1. Make an array `x` with 100 evenly spaced values between 0 and 2 \* pi;
+
+```{python}
+#- x is an array with 100 evenly spaced numbers 0 - 2 pi
+x = np.linspace(0, 2 * np.pi, 100)
+x.shape
+```
+
+1. Make an array `y` which contains the cosine of the corresponding value in
+   `x` - so `y[i] = cos(x[i])` (hint: `np.lookfor('cosine')`).
+
+```{python}
+#- y has cosines of values in x
+y = np.cos(x)
+y.shape
+```
+
+1. Plot `x` against `y`;
+
+```{python}
+#- plot x against y
+import matplotlib.pyplot as plt
+plt.plot(x, y)
+```
+
+1. Make a 10 by 20 array of mean 0 variance 1 normal random numbers;
+
+```{python}
+#- Shape 10, 20 array of random numbers
+rand_arr = np.random.randn(10, 20)
+rand_arr.shape
+```
+
+1. Display this array as an image;
+
+```{python}
+#- Display as image
+plt.imshow(rand_arr)
+```
+
+1. Investigate `plt.cm`.  See if you can work out how to make the displayed
+   image be grayscale instead of color.
+
+```{python}
+#- Grayscale image of array
+plt.imshow(rand_arr, cmap=plt.cm.gray)
+```
+
+# Indexing and slicing, array creation
+
+See discussion at Index ordering and reshape in NumPy and MATLAB.
+
+<!-- 10 minutes. -->
+1. Create the following array, call this `a` (you did this before):
+
+   ```
+   2  7 12  0
+   3  9  3  4
+   4  0  1  3
+   ```
+
+```{python}
+#- Create array "a"
+a = np.array([[2, 7, 12, 0], [3, 9, 3, 4], [4, 0, 1,  3]])
+```
+
+1. Get the 2nd row of `a` (`[ 3 9 3 4]`);
+
+```{python}
+#- 2nd row of a
+a[1]
+```
+
+1. Get the 3rd column of `a` (`[12 3 1]`);
+
+```{python}
+#- 3rd column of a
+a[:, 2]
+```
+
+1. Create the following arrays (with correct data types):
+
+   ```
+   [[1, 1, 1, 1],
+    [1, 1, 1, 1],
+    [1, 1, 1, 2],
+    [1, 6, 1, 1]]
+
+   [[0., 0., 0., 0., 0.],
+    [2., 0., 0., 0., 0.],
+    [0., 3., 0., 0., 0.],
+    [0., 0., 4., 0., 0.],
+    [0., 0., 0., 5., 0.],
+    [0., 0., 0., 0., 6.]]
+   ```
+
+   Par on course: 3 statements for each
+
+   *Hint*: Individual array elements can be accessed similarly to a list, e.g.
+   `a[1]` or `a[1, 2]`.
+
+   *Hint*: Examine the docstring for `diag`.
+
+```{python}
+#- Build given arrays
+arr1 = np.ones((4, 4), dtype=np.int64)  # Would be float by default
+arr1[3, 1] = 6
+arr1[2, 3] = 2
+arr1
+```
+
+```{python}
+arr2 = np.diag([2., 3., 4, 5, 6], -1)  # Need a float input to diag for float output
+arr2[:, :-1]
+```
+
+1. Skim through the documentation for `np.tile`, and use this function to
+   construct the array:
+
+   ```
+   [[4, 3, 4, 3, 4, 3],
+    [2, 1, 2, 1, 2, 1],
+    [4, 3, 4, 3, 4, 3],
+    [2, 1, 2, 1, 2, 1]]
+   ```
+
+```{python}
+#- Use np.tile to construct array
+np.tile([[4, 3], [2, 1]], (2, 3))
+```
+
+# Fancy indexing using boolean arrays
+
+<!-- 5 minutes. -->
+1. Create the following array `a` (same as before):
+
+   ```
+   2  7 12  0
+   3  9  3  4
+   4  0  1  3
+   ```
+
+```{python}
+#- Create array a
+a = np.array([[2, 7, 12, 0], [3, 9, 3, 4], [4, 0, 1,  3]])
+```
+
+1. Use `>` to make a mask that is true where the elements are greater than
+   5, like this:
+
+   ```
+   False True  True  False
+   False True  False False
+   False False False False
+   ```
+
+```{python}
+#- Make mask for values greater than 5
+mask = a > 5
+mask
+```
+
+1. Return all the elements in `a` that are greater than 5.
+
+```{python}
+#- Return all values in a that are greater than 5
+a[mask]
+```
+
+1. Set all the elements greater than 5 to be equal to 5, to get this:
+
+   ```
+   2  5  5  0
+   3  5  3  4
+   4  0  1  3
+   ```
+
+```{python}
+#- Set all elements greater than 5 to equal 5
+a[mask] = 5
+a
+```
+
+# Elementwise operations
+
+<!-- 10 minutes. -->
+Remember our array `a`:
+
+```
+2  7 12  0
+3  9  3  4
+4  0  1  3
+```
+
+1. Use array slicing to get a new array composed of the even columns (0, 2) of
+   `a`. Now get array that contains the odd columns (1, 3) of `a`.  Add
+   these two arrays.
+
+```{python}
+#- Add even and odd columns of a
+a = np.array([[2, 7, 12, 0], [3, 9, 3, 4], [4, 0, 1,  3]])
+even_columns = a[:, ::2]
+odd_columns = a[:, 1::2]
+even_columns + odd_columns
+```
+
+1. Generate this array:
+
+   ```
+   [2**0, 2**1, 2**2, 2**3, 2**4]
+   ```
+
+```{python}
+#- Generate array of powers of 2
+2 ** np.arange(5)
+```
+
+1. Generate an array length 10 such that this is true of the elements (where
+   `x[i]` is the element of `x` at index `i`):
+
+   ```
+   x[i] = 2 ** (3 * i) - i
+   ```
+
+```{python}
+#- Generate array
+inds = np.arange(10)
+x = 2 ** (3 * inds) - inds
+x
+```
+
+# Summary functions
+
+Remember our array `a`:
+
+```
+2  7 12  0
+3  9  3  4
+4  0  1  3
+```
+
+```{python}
+a = np.array([[2, 7, 12, 0], [3, 9, 3, 4], [4, 0, 1,  3]])
+```
+
+What are the:
+
+* sum of all the values?
+
+```{python}
+#- Sum of values in a
+a.sum()
+```
+
+* sum of the columns?
+
+```{python}
+#- Sum of the values of the columns in a
+a.sum(axis=0)  # Sum over the first axis, leaving the second
+```
+
+* sum of the rows?
+
+```{python}
+#- Sum of the values of the rows in a
+a.sum(axis=1)  # Sum over the second axis, leaving the first
+```
+
+* mean?
+
+```{python}
+#- Mean of all the values in a
+a.mean()
+```
+
+* min?
+
+```{python}
+#- Minimum of all the values in a
+a.min()
+```
+
+* max?
+
+```{python}
+#- Maximum of all the values in a
+a.max()
+```
+
+<!-- vim:ft=rst -->
+<!-- Course -->
+<!-- BIC -->
+<!-- Python distributions -->
+<!-- Version control -->
+<!-- Editors -->
+<!-- Python and common libraries -->
+<!-- IPython -->
+<!-- Virtualenv and helpers -->
+<!-- Pypi and packaging -->
+<!-- Mac development -->
+<!-- Windows development -->
+<!-- Nipy and friends -->
+<!-- FMRI datasets -->
+<!-- Languages -->
+<!-- Imaging software -->
+<!-- Installation -->
+<!-- Tutorials -->
+<!-- MB tutorials -->
+<!-- Ideas -->
+<!-- Psych-214 -->
+<!-- People -->
+<!-- Licenses -->
+<!-- Neuroimaging stuff -->
+<!-- OpenFMRI projects -->
+<!-- Unix -->
+<!-- Substitutions -->
