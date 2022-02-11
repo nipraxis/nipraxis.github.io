@@ -1,55 +1,102 @@
 ---
 layout: page
 title: Home
-tagline: Principles and Techniques of Data Science
+tagline: Theory and practice of brain imaging
 nav_exclude: true
 ---
 
-# Principles and Techniques of Data Science
+# Theory and practice of brain imaging
 {: .mb-2 }
-UC Berkeley
+The Nipraxis team
 {: .mb-0 .fs-6 .text-grey-dk-000 }
 
-## Offerings
-1. [Spring 2022](sp22)
-1. [Fall 2021](fa21)
-1. [Summer 2021](su21)
-1. [Spring 2021](sp21)
-1. [Fall 2020](fa20)
-1. [Summer 2020](su20)
-1. [Spring 2020](sp20)
-1. [Fall 2019](fa19)
-1. [Summer 2019](su19)
-1. [Spring 2019](sp19)
-1. [Fall 2018](fa18)
-1. [Spring 2018](sp18)
-1. [Fall 2017](fa17)
-1. [Spring 2017](sp17)
+## Courses
+
+1. [Spring 2022](spring-2022)
 
 <br>
 
-## Overview
+## About the class
 
-Combining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world.
-This intermediate level class bridges between [Data8](http://data8.org/) and upper division computer science and statistics courses as well as methods courses in other fields.
-In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​
-Through a strong emphasizes on data centric computing, quantitative critical thinking, and exploratory data analysis this class covers key principles and techniques of data science.
-These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.
+This is an online, but mostly live class on the theory and practice of brain
+imaging.
 
-## Goals
+In particular, this is a full pilot for a course that will run in the Fall of
+2022.  Expect the pilot course to be a little rough round the edges, but
+otherwise complete and coherent.
 
-- **Prepare** students for advanced Berkeley courses in data-management ([CS 186](http://www.cs186berkeley.net)), machine learning ([CS 189](https://people.eecs.berkeley.edu/~jrs/189/)), and statistics ([Stat 154](http://www.stat.berkeley.edu/~rabbee/s154/)), by providing the necessary foundation and context
+In order to work productively in imaging, you will need to be able to read and
+write simple code to manipulate images, move and modify files, and run analysis
+steps.  You will need code.
 
-- **Enable** students to start careers as data scientists by providing experience working with real-world data, tools, and techniques
+But modern programming languages, such as Python, are not just an additional
+skill that you will need for intermediate and advanced work.  They are
+— languages — in which you can express and explore the fundamental *ideas* that
+lie behind the analysis.   These are ideas in signal processing, image
+processing, and, most obviously, in statistics.  This course is not designed in
+order for you to *learn to code*, it is designed so that you use *code to
+learn*.
 
-- **Empower** students to apply computational and inferential thinking to tackle real-world problems
+You may be able to do your work with code, and explain it, but your results
+will be full of error unless you organize your work carefully, and you can
+collaborate with others.  We will teach you this organization and collaboration
+so you can work more effectively and productively with your mentors and peers.
+Along the way, you will find you have all the tools you need to do accurate,
+reproducible research.  Collaboration and reproducibility are very close ideas.
+
+Lastly, we will teach you to engage with your tools.  Just as you collaborate with your peers to do your research, so you will learn to collaborate with your peers who are building and maintaining the code you use.  We will teach you to become an owner and contributor to the common tools that we use.   By contributing, you will help your field, and you will learn from others how to use code more effectively and to do a wider range of work.
+
+## The team
+
+Your teachers are themselves researchers in brain imaging, and contributors to brain imaging tools.  Between us, we have many decades of experience in teaching brain imaging, and in brain imaging research.  The team are:
+
+* Matthew Brett
+* Chris Markiewicz
+* Oscar Estaban
+* Zvi Baratz
 
 ## Prerequisites
 
-While we are working to make this class widely accessible we currently require the following (or equivalent) prerequisites:
+You should know some very basic programming in any language. In particular, we
+will expect you to know what variables and [for
+loops](https://en.wikipedia.org/wiki/For_loop) are, and how to call functions.
+That said, if you are prepared to catch up as you go, and interact with us,
+your teachers, you may be able to get away without any background using code.
 
-1. **Foundations of Data Science:** [**Data 8**](http://data8.org/) covers much of the material in Data 100 but at an introductory level. Data8 provides basic exposure to python programming and working with tabular data as well as visualization, statistics, and machine learning.
+We will be teaching in Python, but we are expecting that many of you will never
+have used Python before.
 
-1. **Computing:** _The Structure and Interpretation of Computer Programs_ [**CS 61A**](http://cs61a.org) or _Computational Structures in Data Science_ [**CS 88**](http://cs88-website.github.io). These courses provide additional background in python programming (e.g., _for loops_, _lambdas_, _debugging_, and _complexity_) that will enable Data 100 to focus more on the concepts in Data Science and less on the details of programming in python.
+You will find the course easier if you have done some brain imaging analysis
+before, but that is not a requirement.
 
-1. **Math:** _Linear Algebra_ ([Math 54](https://math.berkeley.edu/~nadler/54fall2017.html), [EE 16A](http://inst.eecs.berkeley.edu/~ee16a/), or [Stat 89A](https://stat89a.com/)): We will need some basic concepts like linear operators and derivatives to enable statistical inference and derive new prediction algorithms. This may be satisfied concurrently to Data 100.
+## Commitment
+
+We ask you to commit yourself to:
+
+* 8 weeks, from March through mid-May 2022.
+* 1 hour per week of independent study, either reading or videos.
+* Two 2 hour live classes on Zoom
+* 1-2 hours per week of homework / group work.
+
+That's 6-7 hours per week for 8 weeks.
+
+## Schedule
+
+This is the preliminary schedule for the 16 live classes.
+
+1. Introduction to Python.  What is an image?
+2. The Jupyter Notebook.  Numpy.
+3. Images, arrays, and plotting.
+4. Arrays in three and four dimensions.
+5. Arrays with four dimensions and time series.
+6. Python modules and scripts.  The text editor.
+7. Version control and collaboration.
+8. Outlier detection.  Testing.
+9. Correlation and regression. The general linear model.
+10. T tests.  Analysis of variance
+11. Multiple comparison correction
+12. Convolution and the hemodynamic response.
+13. Interpolation and slice timing.
+14. Optimization and image registration.
+15. Affine transforms.  Cross-modality registration.
+16. Cross-subject registration.
