@@ -2,11 +2,11 @@
 
 ## The class
 
-This is a online, but mostly live class on the theory and practice of brain
+This is an online, but mostly live class on the theory and practice of brain
 imaging.
 
 In particular, this is a full pilot for a course that will run in the Fall of
-\2022.  Expect the pilot course to be a little rough round the edges, but
+2022.  Expect the pilot course to be a little rough round the edges, but
 otherwise complete and coherent.
 
 In order to work productively in imaging, you will need to be able to read and
@@ -28,7 +28,7 @@ so you can work more effectively and productively with your mentors and peers.
 Along the way, you will find you have all the tools you need to do accurate,
 reproducible research.  Collaboration and reproducibility are very close ideas.
 
-Lastly, we will teach you to engage with your tools.  As you collaborate with your peers to do your research, so you will learn to collaborate with your peers who are building and maintaining the code you use.   We will teach you to become an owner and contributor to the common tools that we use.   By contributing, you will help your field, and you will learn from others, how to use code more effectively, and to do a wider range of work.
+Lastly, we will teach you to engage with your tools.  Just as you collaborate with your peers to do your research, so you will learn to collaborate with your peers who are building and maintaining the code you use.  We will teach you to become an owner and contributor to the common tools that we use.   By contributing, you will help your field, and you will learn from others how to use code more effectively and to do a wider range of work.
 
 ## The team
 
@@ -42,7 +42,7 @@ Your teachers are themselves researchers in brain imaging, and contributors to b
 ## Prerequisites
 
 You should know some very basic programming in any language. In particular, we
-will expect you to know what variables are, and For Loops, and how to call
+will expect you to know what variables and [for loops](https://en.wikipedia.org/wiki/For_loop) are, and how to call
 functions.   That said, if you are prepared to catch up as you go, and interact
 with us, your teachers, you may be able to get away without any background
 using code.
