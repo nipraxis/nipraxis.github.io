@@ -54,3 +54,10 @@ Specifically, the `gh-pages` branch here has a `CNAME` file with contents `nipra
 
 I needed to set up both `@` and `www` records to get the original top-level
 domain working.  See the Github page custom domain instructions above.
+
+## Local page builds
+
+[Instructions](https://kevinl.info/just-the-class/#local-development-environment).
+
+See also the [Github
+instructions](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
