@@ -10,20 +10,16 @@ nav_exclude: true
 The Nipraxis team
 {: .mb-0 .fs-6 .text-grey-dk-000 }
 
-## Courses
+## Iterations
 
 1. [Spring 2022](spring-2022)
 
 <br>
 
-## About the class
+## About the course
 
-This is an online, but mostly live class on the theory and practice of brain
+This is an online, but mostly live course on the theory and practice of brain
 imaging.
-
-In particular, this is a full pilot for a course that will run in the Fall of
-2022.  Expect the pilot course to be a little rough round the edges, but
-otherwise complete and coherent.
 
 In order to work productively in imaging, you will need to be able to read and
 write simple code to manipulate images, move and modify files, and run analysis
@@ -75,14 +71,14 @@ We ask you to commit yourself to:
 
 * 8 weeks, from March through mid-May 2022.
 * 1 hour per week of independent study, either reading or videos.
-* Two 2 hour live classes on Zoom
+* Two 2 hour live sessions on Zoom
 * 1-2 hours per week of homework / group work.
 
 That's 6-7 hours per week for 8 weeks.
 
 ## Schedule
 
-This is the preliminary schedule for the 16 live classes.
+This is the preliminary schedule for the 16 live sessions.
 
 1. Introduction to Python.  What is an image?
 2. The Jupyter Notebook.  Numpy.
