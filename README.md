@@ -46,11 +46,11 @@ See the [Github instructions](https://docs.github.com/en/pages/configuring-a-cus
 
 Specifically, the `gh-pages` branch here has a `CNAME` file with contents `nipraxis.org`.   The `textbook` repo `gh-pages` branch has `CNAME` file with `textbook.nipraxis.org`.  My DNS provider has the following CNAME records:
 
-Host record Points to
-=========== =========
-@           nipraxis.github.io
-www         nipraxis.github.io
-textbook    nipraxis.org
+| Host record | Points to |
+| ----------- | --------- |
+| @           | nipraxis.github.io |
+| www         | nipraxis.github.io |
+| textbook    | nipraxis.org |
 
 I needed to set up both `@` and `www` records to get the original top-level
 domain working.  See the Github page custom domain instructions above.
