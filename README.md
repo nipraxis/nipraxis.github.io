@@ -39,3 +39,18 @@ the course, or course iteration.
 
 The general structure comes from the one I found for the [DS-100
 repositories](https://github.com/DS-100).
+
+## DNS setup
+
+See the [Github instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+
+Specifically, the `gh-pages` branch here has a `CNAME` file with contents `nipraxis.org`.   The `textbook` repo `gh-pages` branch has `CNAME` file with `textbook.nipraxis.org`.  My DNS provider has the following CNAME records:
+
+Host record Points to
+=========== =========
+@           nipraxis.github.io
+www         nipraxis.github.io
+textbook    nipraxis.org
+
+I needed to set up both `@` and `www` records to get the original top-level
+domain working.  See the Github page custom domain instructions above.
