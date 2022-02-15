@@ -12,7 +12,7 @@ The Nipraxis team
 
 ## Iterations
 
-1. [Spring 2022](spring-2022)
+1. [Spring 2022](spring-2022) - full pilot version of course.
 
 <br>
 
@@ -20,6 +20,13 @@ The Nipraxis team
 
 This is an online, but mostly live course on the theory and practice of brain
 imaging.
+
+See [this 2016 Berkeley
+course](https://bic-berkeley.github.io/psych-214-fall-2016/) for some idea of
+what the course will be like.
+
+We wrote up a similar course in [Frontiers in
+Neuroimaging](https://www.frontiersin.org/articles/10.3389/fnins.2018.00727).
 
 In order to work productively in imaging, you will need to be able to read and
 write simple code to manipulate images, move and modify files, and run analysis
@@ -65,20 +72,9 @@ have used Python before.
 You will find the course easier if you have done some brain imaging analysis
 before, but that is not a requirement.
 
-## Commitment
-
-We ask you to commit yourself to:
-
-* 8 weeks, from March through mid-May 2022.
-* 1 hour per week of independent study, either reading or videos.
-* Two 2 hour live sessions on Zoom
-* 1-2 hours per week of homework / group work.
-
-That's 6-7 hours per week for 8 weeks.
-
 ## Schedule
 
-This is the preliminary schedule for the 16 live sessions.
+This is the preliminary sketch of what we cover in the 16 live sessions.
 
 1. Introduction to Python.  What is an image?
 2. The Jupyter Notebook.  Numpy.
