@@ -1,8 +1,8 @@
-# Theory and practice of brain imaging
+# Practice and theory of brain imaging
 
 ## The class
 
-This is an online, but mostly live class on the theory and practice of brain
+This is an online, but mostly live class on the practice and theory of brain
 imaging.
 
 In particular, this is a full pilot for a course that will run in the Fall of

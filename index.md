@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Home
-tagline: Theory and practice of brain imaging
+tagline: Practice and theory of brain imaging
 nav_exclude: true
 ---
 
-# Theory and practice of brain imaging
+# Practice and theory of brain imaging
 {: .mb-2 }
 The Nipraxis team
 {: .mb-0 .fs-6 .text-grey-dk-000 }
@@ -18,7 +18,7 @@ The Nipraxis team
 
 ## About the course
 
-This is an online, but mostly live course on the theory and practice of brain
+This is an online, but mostly live course on the practice and theory of brain
 imaging.
 
 See [this 2016 Berkeley
