@@ -13,6 +13,7 @@ The Nipraxis team
 ## Iterations
 
 1. [Spring 2022](spring-2022) - full pilot version of course.
+2. [Fall 2022](fall-2022) - first full version of course.
 
 <br>
 
@@ -60,35 +61,45 @@ Your teachers are themselves researchers in brain imaging, and contributors to b
 
 ## Prerequisites
 
-You should know some very basic programming in any language. In particular, we
-will expect you to know what variables and [for
-loops](https://en.wikipedia.org/wiki/For_loop) are, and how to call functions.
-That said, if you are prepared to catch up as you go, and interact with us,
-your teachers, you may be able to get away without any background using code.
+For the upcoming version of the Nipraxis course, we will assume that you *either*:
 
-We will be teaching in Python, but we are expecting that many of you will never
-have used Python before.
+* Have a reasonable working knowledge of Python and the Numpy array
+  library for Python, or
+* Have a good knowledge of another array programming language, such as
+  Matlab or R, and you are willing to work a bit harder at the start of the course, to catch up on the Python you need.
 
-You will find the course easier if you have done some brain imaging analysis
-before, but that is not a requirement.
+In particular, we will expect you to know about:
+
+* Using arrays (matrices in Matlab)
+* [for loops](https://en.wikipedia.org/wiki/For_loop)
+* Writing your own functions on Python, or Matlab / R.
+
+You will find the course easier if you have done some brain imaging
+analysis before, but that is not a requirement.
 
 ## Schedule
 
-This is the preliminary sketch of what we cover in the 16 live sessions.
+This is the preliminary sketch of what we cover:
 
-1. Introduction to Python.  What is an image?
-2. The Jupyter Notebook.  Numpy.
-3. Images, arrays, and plotting.
-4. Arrays in three and four dimensions.
-5. Arrays with four dimensions and time series.
-6. Python modules and scripts.  The text editor.
-7. Version control and collaboration.
-8. Outlier detection.  Testing.
-9. Correlation and regression. The general linear model.
-10. T tests.  Analysis of variance
-11. Multiple comparison correction
-12. Convolution and the hemodynamic response.
-13. Interpolation and slice timing.
-14. Optimization and image registration.
-15. Affine transforms.  Cross-modality registration.
-16. Cross-subject registration.
+1. Using Python and Jupyter.  What is an image?
+2. Images, arrays, and plotting.
+3. Arrays in three and four dimensions, time series.
+4. Python modules and scripts.  The text editor.
+5. Version control and collaboration.
+6. Working reproducibly and collaborating with Github.
+7. Outlier detection.  Testing.
+8. Correlation and regression. The general linear model.
+9. T tests.  Analysis of variance
+10. Multiple comparison correction
+11. Convolution and the hemodynamic response.
+12. Interpolation and slice timing.
+13. Optimization and image registration.
+14. Affine transforms.  Cross-modality registration.
+15. Cross-subject registration.
+
+## Capstone, homework
+
+Expect to do exercises regularly, during the classes, and for
+homework.  The main homework is working together in groups to use the
+tools we teach, for a substantial, independent and reproducible brain
+imaging project, with regular feedback and support from the team.  There will be a small prize for the best project.
