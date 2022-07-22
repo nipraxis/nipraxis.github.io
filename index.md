@@ -22,9 +22,9 @@ The Nipraxis team
 This is an online, but mostly live course on the practice and theory of brain
 imaging.
 
-See [this 2016 Berkeley
-course](https://bic-berkeley.github.io/psych-214-fall-2016/) for some idea of
-what the course will be like.
+You can get an idea of what we cover from the [developing online
+textbook for the course](https://textbook.nipraxis.org/intro.html).
+You can also look at [a 2016 version of this course at Berkeley ](https://bic-berkeley.github.io/psych-214-fall-2016/).
 
 We wrote up a similar course in [Frontiers in
 Neuroimaging](https://www.frontiersin.org/articles/10.3389/fnins.2018.00727).
