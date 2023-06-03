@@ -14,13 +14,14 @@ The Nipraxis team
 
 1. [Spring 2022](spring-2022) - full pilot version of course.
 2. [Fall 2022](fall-2022) - first full version of course.
+2. [Summer 2023](summer-2023) - last full version of course.
 
 <br>
 
 ## About the course
 
-This is an online, but mostly live course on the practice and theory of brain
-imaging.
+This is an online — but mostly live — course on the practice and theory of
+brain imaging.
 
 You can get an idea of what we cover from the [developing online
 textbook for the course](https://textbook.nipraxis.org/intro.html).
@@ -58,24 +59,22 @@ Your teachers are themselves researchers in brain imaging, and contributors to b
 * Chris Markiewicz
 * Oscar Estaban
 * Zvi Baratz
+* Peter Rush
 
 ## Prerequisites
 
-For the upcoming version of the Nipraxis course, we will assume that you *either*:
-
-* Have a reasonable working knowledge of Python and the Numpy array
-  library for Python, or
-* Have a good knowledge of another array programming language, such as
-  Matlab or R, and you are willing to work a bit harder at the start of the course, to catch up on the Python you need.
+For the upcoming version of the Nipraxis course, we will assume that have
+a *reasonable working knowledge of Python and the Numpy array library for
+Python*
 
 In particular, we will expect you to know about:
 
-* Using arrays (matrices in Matlab)
-* [for loops](https://en.wikipedia.org/wiki/For_loop)
-* Writing your own functions on Python, or Matlab / R.
+* Using Numpy arrays.
+* [for loops](https://en.wikipedia.org/wiki/For_loop).
+* Writing your own functions on Python.
 
-You will find the course easier if you have done some brain imaging
-analysis before, but that is not a requirement.
+You will find the course easier if you have done some brain imaging analysis
+before, but that is not a requirement.
 
 ## Schedule
 
