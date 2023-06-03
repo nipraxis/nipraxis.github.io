@@ -63,24 +63,14 @@ Your teachers are themselves researchers in brain imaging, and contributors to b
 
 ## Prerequisites
 
-For the upcoming version of the Nipraxis course, we will assume that have
-a *reasonable working knowledge of Python and the Numpy array library for
-Python*
-
-In particular, we will expect you to know about:
-
-* Using Numpy arrays.
-* [for loops](https://en.wikipedia.org/wiki/For_loop).
-* Writing your own functions on Python.
-
-You will find the course easier if you have done some brain imaging analysis
-before, but that is not a requirement.
+See the individual course iteration pages above, for details on the
+prerequisites.
 
 ## Schedule
 
-This is the preliminary sketch of what we cover:
+This is a sketch of what we plan to cover in the course:
 
-1. Using Python and Jupyter.  What is an image?
+1. Using Jupyter notebooks.  What is an image?
 2. Images, arrays, and plotting.
 3. Arrays in three and four dimensions, time series.
 4. Python modules and scripts.  The text editor.
