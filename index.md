@@ -49,7 +49,13 @@ so you can work more effectively and productively with your mentors and peers.
 Along the way, you will find you have all the tools you need to do accurate,
 reproducible research.  Collaboration and reproducibility are very close ideas.
 
-Lastly, we will teach you to engage with your tools.  Just as you collaborate with your peers to do your research, so you will learn to collaborate with your peers who are building and maintaining the code you use.  We will teach you to become an owner and contributor to the common tools that we use.   By contributing, you will help your field, and you will learn from others how to use code more effectively and to do a wider range of work.
+Lastly, we will teach you to engage with your tools.
+Just as you collaborate with your peers to do your research, so you will learn to collaborate with your peers who are building and maintaining the code you use.
+We will teach you to become an owner and contributor to the common tools that we use.
+By contributing, you will help your field, and you will learn from others how to use code more effectively and to do a wider range of work.
+
+!!! info "Intention disclaimer"
+    Full-disclosure, we would also like this course to engage motivated individuals who want to contribute to *NiBabel*.
 
 ## The team
 
